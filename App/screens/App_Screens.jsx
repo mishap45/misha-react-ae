@@ -43,21 +43,24 @@ const App_Screens = () => {
                 name="Home"
                 component={Home}
                 options={{
-                    tabBarLabel: 'Профіль'
+                    tabBarLabel: 'Профіль',
+                    title: 'Home'
                 }}
             />
             <Tab.Screen
                 name="Map"
                 component={Map}
                 options={{
-                    tabBarLabel: 'Мапа'
+                    tabBarLabel: 'Мапа',
+                    title: 'Map'
                 }}
             />
             <Tab.Screen
                 name="Service"
                 component={Service}
                 options={{
-                    tabBarLabel: 'Послуги'
+                    tabBarLabel: 'Послуги',
+                    title: 'Service'
                 }}
             />
         </Tab.Navigator>

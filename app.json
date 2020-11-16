@@ -11,6 +11,8 @@
     "android": {
       "package": "com.mishaReact.AE_CarSharing",
       "versionCode": 1
-    }
+    },
+    "description": "AE Car Sharing App",
+    "githubUrl": "https://github.com/mishap45/misha-react-ae"
   }
 }
