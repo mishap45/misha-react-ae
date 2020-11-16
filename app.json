@@ -1,0 +1,12 @@
+{
+  "name": "misha-ae",
+  "displayName": "misha-ae",
+  "expo": {
+    "name": "misha-ae",
+    "slug": "misha-ae",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
