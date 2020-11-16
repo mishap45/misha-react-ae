@@ -1,12 +1,16 @@
 {
-  "name": "misha-ae",
-  "displayName": "misha-ae",
   "expo": {
-    "name": "misha-ae",
-    "slug": "misha-ae",
+    "name": "AE Car Sharing",
+    "icon": "./assets/img/Logo_350.png",
+    "slug": "AE_CarSharing",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "ios": {
+      "bundleIdentifier": "com.mishaReact.AE-CarSharing",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.mishaReact.AE_CarSharing",
+      "versionCode": 1
+    }
   }
 }
