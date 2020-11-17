@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase',
         fontSize: 16,
         fontWeight: '600',
-        paddingBottom: 10
+        paddingVertical: 10
     }
 });
 
