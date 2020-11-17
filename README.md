@@ -3,7 +3,6 @@ AE Car Sharing App
 
 ## Technologies
 Project is created with:
-* @expo/vector-icons: 10.2.1
 * @react-native-community/masked-view: 0.1.10
 * @react-navigation/bottom-tabs: 5.11.1
 * @react-navigation/native: 5.8.9
