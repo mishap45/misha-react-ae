@@ -1,6 +1,5 @@
 import React from 'react'
 import { Text, View, StyleSheet, Pressable, ImageBackground, ScrollView, Dimensions } from 'react-native'
-import { StatusBar } from 'expo-status-bar'
 import { Ionicons } from '@expo/vector-icons'
 
 const image = {
@@ -17,7 +16,7 @@ const Service = () => {
                 <View>
                     <View style={styles.first}>
                         <ImageBackground source={image} style={styles.image}>
-                            <Pressable style={styles.availableBtn}>
+                            <Pressable style={styles.availableBtn} onPress={()=>alert('Ви натиснули на послугу')}>
                                 <Text style={styles.availableBtnText}>Available</Text>
                             </Pressable>
 
@@ -33,8 +32,6 @@ const Service = () => {
                     </View>
                 </View>
             </ScrollView>
-
-            <StatusBar style={'dark'}/>
         </View>
     )
 };

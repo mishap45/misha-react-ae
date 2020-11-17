@@ -2,7 +2,6 @@ import React from 'react'
 import { View, StyleSheet, Dimensions } from 'react-native'
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
 import { FontAwesome5 } from '@expo/vector-icons'
-import { StatusBar } from 'expo-status-bar'
 
 const Map = () => {
     return (
@@ -19,8 +18,6 @@ const Map = () => {
             />
 
             <View style={styles.search}><FontAwesome5 name="search-location" size={25} color="black" /></View>
-
-            <StatusBar style={'dark'} />
         </View>
     )
 };

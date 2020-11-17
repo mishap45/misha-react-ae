@@ -14,8 +14,7 @@ const App_Screens = () => {
             initialRouteName="Map"
             tabBarOptions={{
                 activeTintColor: '#43A047',
-                inactiveTintColor: '#8F8F8F',
-                backgroundColor: '#000'
+                inactiveTintColor: '#8F8F8F'
             }}
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {

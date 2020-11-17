@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, StyleSheet, Image, Pressable, Text } from 'react-native'
-import { StatusBar } from 'expo-status-bar'
 
 const Home = () => {
     return (
@@ -10,8 +9,6 @@ const Home = () => {
             <Pressable  style={styles.btn} onPress={() => {alert('Ви натиснули на увійти')}}>
                 <Text style={styles.btnText}>Увійти</Text>
             </Pressable>
-
-            <StatusBar style={'light'} />
         </View>
     )
 };
