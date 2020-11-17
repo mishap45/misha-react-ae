@@ -1,7 +1,6 @@
 import React from 'react'
-import { View, StyleSheet, Dimensions } from 'react-native'
+import { View, StyleSheet, Dimensions, Image } from 'react-native'
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
-import { FontAwesome5 } from '@expo/vector-icons'
 
 const Map = () => {
     return (
@@ -17,7 +16,9 @@ const Map = () => {
                      }}
             />
 
-            <View style={styles.search}><FontAwesome5 name="search-location" size={25} color="black" /></View>
+            <View style={styles.search}>
+                <Image style={styles.img} source={require('../../../assets/icons/search.png')} />
+            </View>
         </View>
     )
 };
@@ -45,6 +46,11 @@ const styles = StyleSheet.create({
         borderColor: '#F9F9F9',
         paddingVertical: 20,
         paddingHorizontal: 20
+    },
+
+    img: {
+        width: 25,
+        height: 25
     }
 });
 

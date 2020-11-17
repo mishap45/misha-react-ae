@@ -1,15 +1,13 @@
 import React from 'react'
-import { Text, View, StyleSheet, Pressable, ImageBackground, ScrollView, Dimensions } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
+import { Text, View, StyleSheet, Pressable, ImageBackground, ScrollView, Dimensions, Image } from 'react-native'
 
 const image = {
     uri: 'https://thumbs.dreamstime.com/z/concept-eletric-car-icon-background-electric-flat-symbol-electricity-sign-blue-colored-92696662.jpg'
 };
 
-const Service = () => {
+const Service = ({ navigation }) => {
     return (
         <View>
-            <View style={styles.header}><Text style={styles.headerText}>Послуги</Text></View>
             <ScrollView style={styles.main}>
                 <View><Text style={styles.availableText}>Доступні послуги</Text></View>
 
@@ -26,10 +24,12 @@ const Service = () => {
                         </ImageBackground>
                     </View>
 
-                    <View style={styles.second}>
-                        <Ionicons name="ios-copy" size={14} color="#4A4A4A"/>
-                        <Text style={styles.secondText}>Читати договір</Text>
-                    </View>
+                    <Pressable onPress={()=>navigation.navigate('Contract')}>
+                        <View style={styles.second}>
+                            <Image style={styles.img} source={require('../../../assets/icons/file.png')} />
+                            <Text style={styles.secondText}>Читати договір</Text>
+                        </View>
+                    </Pressable>
                 </View>
             </ScrollView>
         </View>
@@ -41,19 +41,6 @@ const styles = StyleSheet.create({
         paddingLeft: 8,
         paddingRight: 8,
         height: Dimensions.get("window").height
-    },
-
-    header: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#D7D7D7'
-    },
-
-    headerText: {
-        textAlign: 'center',
-        paddingTop: 25,
-        paddingBottom: 15,
-        fontSize: 18,
-        fontWeight: '500'
     },
 
     availableText: {
@@ -121,6 +108,11 @@ const styles = StyleSheet.create({
         resizeMode: "cover",
         justifyContent: "center",
         borderRadius: 10,
+    },
+
+    img: {
+        width: 14,
+        height: 14
     }
 });
 
