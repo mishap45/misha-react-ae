@@ -6,6 +6,7 @@ Project is created with:
 * @react-native-community/masked-view: 0.1.10
 * @react-navigation/bottom-tabs: 5.11.1
 * @react-navigation/native: 5.8.9
+* @react-navigation/stack: 5.12.6
 * expo: 39.0.2
 * expo-cli: 3.28.5
 * expo-splash-screen: 1.0.2
