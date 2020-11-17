@@ -42,4 +42,5 @@ $  npm start
 ```
 
 ## Url on demo
+https://expo.io/@milov/projects/AE_CarSharing
 exp://exp.host/@milov/AE_CarSharing
